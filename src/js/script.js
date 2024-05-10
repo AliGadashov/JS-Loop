@@ -14,7 +14,7 @@ console.log(
 console.log("");
 
 let FirstArr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let Arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let Arr1 = [...FirstArr1];
 
 console.log("Dovden onceki Array: ", FirstArr1);
 
@@ -48,7 +48,7 @@ console.log(
 console.log("");
 
 let Arr2 = [3, 4, 5, 6, 7, 8, 9, 10];
-let TempArr2 = [3, 4, 5, 6, 7, 8, 9, 10];
+let TempArr2 = [...Arr2];
 
 console.log("Dovden onceki Array: ", TempArr2);
 
@@ -85,7 +85,7 @@ console.log(
 console.log("");
 
 let FirstArr2Example = [3, 4, 5, 6, 7, 8, 9, 10];
-let Arr2Example = [3, 4, 5, 6, 7, 8, 9, 10];
+let Arr2Example = [...FirstArr2Example];
 
 console.log("Dovden onceki Array: ", FirstArr2Example);
 
@@ -124,7 +124,7 @@ console.log(
 console.log("");
 
 let FirstArr3 = [5, 6, 15, 2, 9];
-let Arr3 = [5, 6, 15, 2, 9];
+let Arr3 = [...FirstArr3];
 let max = Arr3[0];
 let min = Arr3[0];
 let total;
@@ -133,7 +133,7 @@ console.log("Dovden onceki Array: ", FirstArr3);
 
 console.log("");
 
-for (let i = 0; i <= Arr3.length - 1; i++) {
+for (let i = 1; i <= Arr3.length - 1; i++) {
   if (Arr3[i] > max) {
     max = Arr3[i];
   }
